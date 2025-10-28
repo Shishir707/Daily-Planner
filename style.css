@@ -14,7 +14,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header */
 header {
     text-align: left;
     margin-bottom: 20px;
@@ -24,24 +23,24 @@ header h1 {
     margin: 0;
 }
 
-/* Date & Day */
 .date-day {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: rgb(0, 0, 0);
     flex-wrap: wrap;
 }
 
 .date-picker input[type="date"] {
-    padding: 5px 10px;
+    padding: 2px 5px;
     font-size: 16px;
 }
 
 .day-checkbox {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     flex-wrap: wrap;
 }
 
@@ -50,29 +49,28 @@ header h1 {
     margin-right: 2px;
 }
 
-/* Main Content */
 .main-content {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Time & Schedule Table */
+
 .time-schedule table {
     border-collapse: collapse;
     width: 100%;
 }
 .time-schedule {
-    flex: 0 0 55%; /* takes 55% width */
+    flex: 0 0 55%; 
 }
 .time-schedule th, .time-schedule td {
-    border: 1px solid #ccc;
+    border: 2px solid #7e7474;
     padding: 8px;
     text-align: center;
 }
 
 .time-schedule th {
-    background-color: #e0f7fa;
+    background-color: #c7cbcc;
 }
 
 .tasks {
@@ -83,7 +81,7 @@ header h1 {
 }
 
 .task-box {
-    border: 2px solid #ccc;
+    border: 2px solid #888181;
     padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -93,7 +91,10 @@ header h1 {
 .task-box h2 {
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 15px;
+    background-color: #cccbcb;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .task-box input[type="text"] {
@@ -113,7 +114,7 @@ header h1 {
     resize: vertical;
 }
 
-/* Mood Emojis */
+
 .mood {
     text-align: center;
     margin-top: 20px;
