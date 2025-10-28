@@ -56,21 +56,39 @@ header h1 {
 }
 
 
+.time-schedule {
+    flex: 0 0 55%;
+    max-width: 55%;    
+    overflow-x: auto;   
+}
+
 .time-schedule table {
     border-collapse: collapse;
     width: 100%;
+    table-layout: fixed;
 }
-.time-schedule {
-    flex: 0 0 55%; 
-}
+
 .time-schedule th, .time-schedule td {
     border: 2px solid #7e7474;
     padding: 8px;
     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
+
+.time-schedule td[contenteditable="true"] {
+    min-width: 60px; 
+    max-width: 200px;  
+}
+
 
 .time-schedule th {
     background-color: #c7cbcc;
+}
+
+#hr{
+    text-align: left;
 }
 
 .tasks {
