@@ -108,45 +108,53 @@ header h1 {
 .task-box textarea {
     width: 100%;
     height: 120px;
-    padding: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     resize: vertical;
 }
 
 
 .mood {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 30px; 
 }
 
 .mood span {
-    margin: 0 8px;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .mood span:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); 
+    background-color: #e0f7fa; 
 }
-
 
 .download-btn {
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .download-btn button {
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 5px 10px;
+    font-size: 13px;
     border: none;
-    background-color: #2196f3;
-    color: #fff;
+    background-color: #4f7fe6;
+    color: #020202;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .download-btn button:hover {
-    background-color: #1976d2;
+    background-color: #03539e;
+    color: White;
+}
+
+.download-btn button:active {
+    background-color: #1df098;
+    color: black;
 }
