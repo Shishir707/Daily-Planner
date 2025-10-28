@@ -8,29 +8,32 @@
 </head>
 <body>
     <div class="planner-container">
+        <!-- Header -->
         <header>
-            <h1>Daily Planner</h1>
+            <h1>Daily Planner_____________________________________</h1>
         </header>
 
+        <!-- Date Picker & Day Selection -->
         <div class="date-day">
             <div class="date-picker">
                 <label for="date">Date:</label>
                 <input type="date" id="date">
             </div>
             <div class="day-checkbox">
-            <label>Day: </label>
-            <label><input type="radio" name="day" value="Mo"> Mo</label>
-            <label><input type="radio" name="day" value="Tu"> Tu</label>
-            <label><input type="radio" name="day" value="We"> We</label>
-            <label><input type="radio" name="day" value="Th"> Th</label>
-            <label><input type="radio" name="day" value="Fr"> Fr</label>
-            <label><input type="radio" name="day" value="Sa"> Sa</label>
-            <label><input type="radio" name="day" value="Su"> Su</label>
-        </div>
+                <label>Day: </label>
+                <label><input type="radio" name="day" value="Mo"> Mo</label>
+                <label><input type="radio" name="day" value="Tu"> Tu</label>
+                <label><input type="radio" name="day" value="We"> We</label>
+                <label><input type="radio" name="day" value="Th"> Th</label>
+                <label><input type="radio" name="day" value="Fr"> Fr</label>
+                <label><input type="radio" name="day" value="Sa"> Sa</label>
+                <label><input type="radio" name="day" value="Su"> Su</label>
+            </div>
         </div>
 
-
+        <!-- Main Planner Content -->
         <div class="main-content">
+            <!-- Left: Time Schedule Table -->
             <div class="time-schedule">
                 <table>
                     <thead>
@@ -61,6 +64,34 @@
                 </table>
             </div>
 
+            <!-- Right: Tasks Boxes -->
+            <div class="tasks">
+                <div class="task-box">
+                    <h2>Top Priorities</h2>
+                    <ul>
+                        <li><input type="text" placeholder="Priority 1"></li>
+                        <li><input type="text" placeholder="Priority 2"></li>
+                        <li><input type="text" placeholder="Priority 3"></li>
+                    </ul>
+                </div>
+
+                <div class="task-box">
+                    <h2>To Do List</h2>
+                    <ul>
+                        <li><input type="text" placeholder="Task 1"></li>
+                        <li><input type="text" placeholder="Task 2"></li>
+                        <li><input type="text" placeholder="Task 3"></li>
+                    </ul>
+                </div>
+
+                <div class="task-box">
+                    <h2>Notes</h2>
+                    <textarea placeholder="Write your notes here..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mood Emojis -->
         <div class="mood">
             <span>😊</span>
             <span>😐</span>
@@ -69,6 +100,12 @@
             <span>🤯</span>
             <span>🥳</span>
         </div>
+        <div class="download-btn">
+            <button onclick="downloadPlanner()">Download Planner</button>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
