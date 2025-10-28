@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="planner-container">
+        <header>
+            <h1>Daily Planner</h1>
+        </header>
+
+        <div class="date-day">
+            <div class="date-picker">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="day-checkbox">
+            <label>Day: </label>
+            <label><input type="radio" name="day" value="Mo"> Mo</label>
+            <label><input type="radio" name="day" value="Tu"> Tu</label>
+            <label><input type="radio" name="day" value="We"> We</label>
+            <label><input type="radio" name="day" value="Th"> Th</label>
+            <label><input type="radio" name="day" value="Fr"> Fr</label>
+            <label><input type="radio" name="day" value="Sa"> Sa</label>
+            <label><input type="radio" name="day" value="Su"> Su</label>
+        </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="time-schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time Period</th>
+                            <th>Schedule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>06:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>07:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>08:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>09:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>10:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>11:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>12:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>13:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>14:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>15:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>16:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>17:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>18:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>19:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>20:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>21:00</td><td contenteditable="true"></td></tr>
+                        <tr><td>22:00</td><td contenteditable="true"></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        <div class="mood">
+            <span>😊</span>
+            <span>😐</span>
+            <span>😞</span>
+            <span>😡</span>
+            <span>🤯</span>
+            <span>🥳</span>
+        </div>
+    </div>
+</body>
+</html>
