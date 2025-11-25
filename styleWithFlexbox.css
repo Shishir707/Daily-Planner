@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.planner-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.date-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.day-checkbox {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.time-schedule {
+    flex: 1 1 55%;
+    min-width: 350px;
+}
+
+.time-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.time-schedule th,
+.time-schedule td {
+    border: 2px solid #777;
+    padding: 8px;
+    text-align: center;
+}
+
+.time-schedule th {
+    background: #d0d0d0;
+}
+
+.time-schedule td[contenteditable="true"] {
+    min-height: 35px;
+    background: #fafafa;
+}
+
+.tasks {
+    flex: 1 1 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-box {
+    padding: 15px;
+    border: 2px solid #888;
+    border-radius: 8px;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-box h2 {
+    background: #dcdcdc;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.task-box textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid #aaa;
+}
+
+
+.mood {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 30px;
+}
+
+.mood span {
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.mood span:hover {
+    transform: scale(1.3);
+    background: #e0f7fa;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-btn button {
+    padding: 7px 12px;
+    font-size: 14px;
+    background: #4f7fe6;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.download-btn button:hover {
+    background: #03539e;
+    color: white;
+}

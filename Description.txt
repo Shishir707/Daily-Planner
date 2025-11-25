@@ -1,0 +1,13 @@
+Why use Class and id 
+
+In this planner layout, the page is divided into different sections so everything stays organized and easy to follow. Each part—like the header, the schedule, and the task boxes—has its own area, which helps keep the overall structure clean. This makes it easier to manage the layout without things getting mixed together.
+
+
+Some parts of the page share similar styles, so they are grouped under common labels. This keeps the design consistent and avoids repeating the same styling over and over. It also makes it easier to update the look later, since one change can affect several pieces at once.
+
+
+A few specific elements need their own separate identity so they can be recognized individually when necessary. These unique markers help when certain parts of the page need special attention or different handling compared to the rest.
+
+There are also small attributes added to certain elements to make them more flexible—for example, allowing some areas to be edited directly or enabling certain actions when clicked. These little additions improve how the page behaves without adding complexity to the main structure.
+
+Altogether, this combination of grouped styles, unique markers, and small functional touches helps keep the planner simple, readable, and easy to work with. It creates a balance between structure and freedom so the page feels organized but not restricted.
